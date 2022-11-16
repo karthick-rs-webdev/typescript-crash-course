@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 20px auto;
+  color: #ff0aa7;
+  text-align: center;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  padding: 6px 10px;
+  border: 1px solid #eee;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+li h4 {
+  color: black;
+  margin: 0;
+  text-transform: capitalize;
+}
+li p {
+  color: #333;
+  margin: 8px 0 0;
+}
+header {
+  background: #eee;
+  padding: 60px;
+}
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #333;
+  margin: 16px 0 6px;
+}
+input,
+select {
+  padding: 6px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  width: 200px;
+}
+.field {
+  display: inline-block;
+  margin: 0 10px;
+}
+button {
+  border: 0;
+  background: #e7dcdc;
+  padding: 6px;
+  min-width: 100px;
+  border-radius: 4px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.start-append {
+  animation: addLog 0.3s linear forwards;
+}
+@keyframes addLog {
+  0% {
+    bottom: 120px;
+    opacity: 0;
+  }
+  25% {
+    bottom: 90px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  75% {
+    bottom: 30px;
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+.delete-content{
+  animation: deleteLog 0.25s linear forwards;
+}
+@keyframes deleteLog {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 750px;
+    opacity: 0.5;
+  }
+  100% {
+    left: 1500px;
+    opacity: 0;
+  }
+}
+
+.edit-content{
+  animation: editLog 0.25s linear forwards;
+}
+
+@keyframes editLog {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
